@@ -1,33 +1,34 @@
-package src.test.java.org.gujavasc.opennetworking.android;
+package org.gujavasc.opennetworking.android;
 
-import static com.leviwilson.android.R.id;
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.assertThat;
 
-import android.widget.TextView;
-import com.xtremelabs.robolectric.RobolectricTestRunner;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import android.widget.TextView;
+
+import com.xtremelabs.robolectric.RobolectricTestRunner;
+
 @RunWith(RobolectricTestRunner.class)
 public class HelloAndroidActivityTest {
 
-    private HelloAndroidActivity activity;
+	private HelloAndroidActivity activity;
 
-    @Before
-        public void setUp() {
-            activity = new HelloAndroidActivity();
-            activity.onCreate(null);
-        }
+	@Before
+	public void setUp() {
+		activity = new HelloAndroidActivity();
+		activity.onCreate(null);
+	}
 
-    @Test
-        public void itProperlyGreetsYou() {
-            assertThat(textOf(id.greet_them), equalTo("Hello android-travis-ci-example!"));
-        }
+	@Test
+	public void itProperlyGreetsYou() {
+		assertThat(textOf(id.greet_them), equalTo("Hello android-travis-ci-example!"));
+	}
 
-    private String textOf(int id) {
-        final TextView textView = (TextView)activity.findViewById(id);
-        return textView.getText().toString();
-    }
+	private String textOf(int id) {
+		final TextView textView = (TextView) activity.findViewById(id);
+		return textView.getText().toString();
+	}
 }
