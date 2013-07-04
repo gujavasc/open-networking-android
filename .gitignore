@@ -5,3 +5,4 @@ target
 tmp
 /bin
 /.classpath
+/.settings
