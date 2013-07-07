@@ -21,5 +21,6 @@ before_install:
     - emulator -avd test -no-skin -no-audio -no-window &
 before_script:
     # Make sure the emulator has started before running tests
-    - sudo ./wait_for_emulator
-script: mvn install -Pintegration-tests -Dandroid.device=test
+    # - ./wait_for_emulator
+#script: mvn install -Pintegration-tests -Dandroid.device=test
+script: mvn install
