@@ -1,4 +1,4 @@
-﻿Open-Networking Android Project
+Open-Networking Android Project
 ===============
 
 Projeto open-source para criação de uma ferramenta de networking.
