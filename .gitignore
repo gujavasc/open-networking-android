@@ -2,12 +2,13 @@
 *.jar
 *.swp
 /.idea/
-/.project/
 /.settings/
 /.classpath
+/.project
 /bin/
 /gen/
 /gen-*/
 /out/
 /target/
 /tmp/
+project.properties

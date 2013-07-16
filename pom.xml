@@ -12,7 +12,6 @@
 
 	<properties>
 		<version.android>4.1.1.4</version.android>
-		<version.platform>8</version.platform>
 		<version.actionbarsherlock>4.3.1</version.actionbarsherlock>
 
 		<version.clean.plugin>2.5</version.clean.plugin>
@@ -64,7 +63,8 @@
 							<includes>
 								<include>bin/**</include>
 								<include>gen/**</include>
-                                <include>out/**</include>
+								<include>gen-*/**</include>
+								<include>out/**</include>
 							</includes>
 						</fileset>
 					</filesets>
@@ -79,7 +79,6 @@
 					<sdk>
 						<platform>${maven.android.platform}</platform>
 					</sdk>
-					<deleteConflictingFiles>true</deleteConflictingFiles>
 					<undeployBeforeDeploy>true</undeployBeforeDeploy>
 				</configuration>
 			</plugin>
