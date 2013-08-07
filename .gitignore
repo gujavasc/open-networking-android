@@ -1,14 +1,26 @@
+########## Intellij #########
+
 *.iml
-*.jar
-*.swp
-/.idea/
-/.settings/
-/.classpath
-/.project
-/bin/
-/gen/
-/gen-*/
-/out/
-/target/
-/tmp/
+.idea/
+out/
+gen-external-apklibs/
+
+########## Eclipse ##########
+
+.classpath
+.settings/
+.project
+classes/
+libs/
+bin/
 project.properties
+
+########### Maven ###########
+
+target/
+tmp/
+
+########### Android ###########
+
+gen/
+lint.xml
