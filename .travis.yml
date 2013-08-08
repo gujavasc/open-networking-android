@@ -2,7 +2,7 @@ language: java
 jdk: oraclejdk7
 env:
     matrix:
-    - ANDROID_SDKS=android-16,"Google Inc.:Google APIs:16"  ANDROID_TARGET=android-16  ANDROID_ABI=armeabi-v7a
+    - ANDROID_SDKS=android-16,google_apis-16  ANDROID_TARGET=android-16  ANDROID_ABI=armeabi-v7a
 #    - ANDROID_SDKS=android-10                ANDROID_TARGET=android-10  ANDROID_ABI=armeabi
 #    - ANDROID_SDKS=sysimg-16                 ANDROID_TARGET=android-16  ANDROID_ABI=armeabi-v7a
 #    - ANDROID_SDKS=android-17,sysimg-17      ANDROID_TARGET=android-17  ANDROID_ABI=armeabi-v7a
@@ -10,12 +10,12 @@ before_install:
     # Install base Android SDK
     - sudo apt-get update -qq
     - if [ `uname -m` = x86_64 ]; then sudo apt-get install -qq --force-yes libgd2-xpm ia32-libs ia32-libs-multiarch; fi
-    - wget http://dl.google.com/android/android-sdk_r21.0.1-linux.tgz
-    - tar xzf android-sdk_r21.0.1-linux.tgz
+    - wget http://dl.google.com/android/android-sdk_r22.0.5-linux.tgz
+    - tar xzf android-sdk_r22.0.5-linux.tgz
     - export ANDROID_HOME=$PWD/android-sdk-linux
     - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
     # Install required Android components.
-    - android update sdk --filter platform-tools,android-17,extra-android-support,$ANDROID_SDKS --no-ui --force
+    - android update sdk --filter platform-tools,extra-android-support,$ANDROID_SDKS --no-ui --force
     # Setup maven-android-sdk-deployer
     - git clone --depth=50 --branch=master git://github.com/mosabua/maven-android-sdk-deployer.git mosabua/maven-android-sdk-deployer
     - cd mosabua/maven-android-sdk-deployer && mvn install -P 4.1
