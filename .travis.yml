@@ -2,7 +2,7 @@ language: java
 jdk: oraclejdk7
 env:
     matrix:
-    - ANDROID_SDKS=android-16,google-apis-16  ANDROID_TARGET=android-16  ANDROID_ABI=armeabi-v7a
+    - ANDROID_SDKS=android-16,"Google Inc.:Google APIs:16"  ANDROID_TARGET=android-16  ANDROID_ABI=armeabi-v7a
 #    - ANDROID_SDKS=android-10                ANDROID_TARGET=android-10  ANDROID_ABI=armeabi
 #    - ANDROID_SDKS=sysimg-16                 ANDROID_TARGET=android-16  ANDROID_ABI=armeabi-v7a
 #    - ANDROID_SDKS=android-17,sysimg-17      ANDROID_TARGET=android-17  ANDROID_ABI=armeabi-v7a
