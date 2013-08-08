@@ -17,8 +17,8 @@ before_install:
     # Install required Android components.
     - android update sdk --filter platform-tools,extra-android-support,extra-google-analytics_sdk_v2,extra-google-play_apk_expansion,extra-google-play_billing,extra-google-admob_ads_sdk,extra-google-gcm,extra-google-google_play_services,extra-google-play_licensing,android-17,$ANDROID_SDKS --no-ui --force
     # Setup maven-android-sdk-deployer
-    - git clone --depth=50 --branch=master git://github.com/mosabua/maven-android-sdk-deployer.git mosabua/maven-android-sdk-deployer
-    - cd mosabua/maven-android-sdk-deployer && mvn install -P 4.1 && cd -
+    - git clone --depth=50 --branch=master git://github.com/mosabua/maven-android-sdk-deployer.git ../../mosabua/maven-android-sdk-deployer
+    - cd ../../mosabua/maven-android-sdk-deployer && mvn install -P 4.1 && cd -
     # Create and start emulator
     - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
     - emulator -avd test -no-skin -no-audio -no-window &
