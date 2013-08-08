@@ -2,7 +2,7 @@ language: java
 jdk: oraclejdk7
 env:
     matrix:
-    - ANDROID_SDKS=android-8            ANDROID_TARGET=android-8   ANDROID_ABI=armeabi
+    - ANDROID_SDKS=android-16            ANDROID_TARGET=android-16  ANDROID_ABI=armeabi-v7a
 #    - ANDROID_SDKS=android-10           ANDROID_TARGET=android-10  ANDROID_ABI=armeabi
 #    - ANDROID_SDKS=sysimg-16            ANDROID_TARGET=android-16  ANDROID_ABI=armeabi-v7a
 #    - ANDROID_SDKS=android-17,sysimg-17 ANDROID_TARGET=android-17  ANDROID_ABI=armeabi-v7a
@@ -17,8 +17,8 @@ before_install:
     # Install required Android components.
     - android update sdk --filter platform-tools,android-16,extra-android-support,$ANDROID_SDKS --no-ui --force
     # Setup maven-android-sdk-deployer
-    - git clone https://github.com/mosabua/maven-android-sdk-deployer.git
-    - cd maven-android-sdk-deployer && mvn install -P 4.1
+    - git clone --depth=50 --branch=master git://github.com/mosabua/maven-android-sdk-deployer.git mosabua/maven-android-sdk-deployer
+    - cd mosabua/maven-android-sdk-deployer && mvn install -P 4.1
     # Create and start emulator
     - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
     - emulator -avd test -no-skin -no-audio -no-window &
