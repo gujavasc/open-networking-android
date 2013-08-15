@@ -13,6 +13,7 @@
     <properties>
         <version.android>4.1.2_r4</version.android>
         <version.analytics>3</version.analytics>
+        <version.androidannotations>2.7.1</version.androidannotations>
         <version.actionbarsherlock>4.3.1</version.actionbarsherlock>
 
         <version.android.plugin>3.6.0</version.android.plugin>
@@ -32,6 +33,17 @@
             <groupId>com.google.android.analytics</groupId>
             <artifactId>analytics</artifactId>
             <version>${version.analytics}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.androidannotations</groupId>
+            <artifactId>androidannotations</artifactId>
+            <version>${version.androidannotations}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.androidannotations</groupId>
+            <artifactId>androidannotations-api</artifactId>
+            <version>${version.androidannotations}</version>
         </dependency>
         <dependency>
             <groupId>com.actionbarsherlock</groupId>
