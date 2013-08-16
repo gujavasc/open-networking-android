@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Open Networking</string>
-    <string name="txt_which_event_looking_for">Qual evento você procura?</string>
+    <string name="text_which_event_looking_for">Qual evento você procura?</string>
     <string name="hint_example">#tdc2013</string>
-    <string name="txt_search">Procurar</string>
+    <string name="text_search">Procurar</string>
 </resources>

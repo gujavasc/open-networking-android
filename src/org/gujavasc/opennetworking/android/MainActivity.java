@@ -1,13 +1,13 @@
 package org.gujavasc.opennetworking.android;
 
-import android.os.Bundle;
+import android.widget.EditText;
+import com.googlecode.androidannotations.annotations.EActivity;
+import com.googlecode.androidannotations.annotations.ViewById;
 
+@EActivity(R.layout.activity_main)
 public class MainActivity extends BaseActivity {
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-	}
+    @ViewById(R.id.edit_text_search)
+    EditText mSearch;
 
 }
