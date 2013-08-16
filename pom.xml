@@ -11,12 +11,19 @@
     <name>Open Networking</name>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <version.android>4.1.2_r4</version.android>
         <version.analytics>3</version.analytics>
         <version.androidannotations>2.7.1</version.androidannotations>
         <version.actionbarsherlock>4.3.1</version.actionbarsherlock>
 
+        <version.compiler.plugin>2.5.1</version.compiler.plugin>
         <version.android.plugin>3.6.0</version.android.plugin>
+
+        <!-- maven-compiler-plugin -->
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
 
         <!-- platform or api level (api level 16 = platform 4.1) -->
         <maven.android.platform>16</maven.android.platform>
@@ -60,6 +67,15 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${version.compiler.plugin}</version>
+                    <configuration>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                    </configuration>
+                </plugin>
+                <plugin>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
                     <version>${version.android.plugin}</version>
@@ -68,6 +84,13 @@
             </plugins>
         </pluginManagement>
         <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
