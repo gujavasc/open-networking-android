@@ -1,10 +1,11 @@
 package org.gujavasc.opennetworking.android;
 
 import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.google.analytics.tracking.android.EasyTracker;
 
-public abstract class BaseActivity extends SherlockActivity {
+public abstract class BaseActivity extends SherlockFragmentActivity {
 
     @Override
     public void onStart() {

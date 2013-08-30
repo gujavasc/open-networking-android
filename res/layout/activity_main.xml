@@ -18,10 +18,10 @@
             style="@style/form_text_field"/>
 
     <Button
+            android:id="@+id/button_search"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_search"
-            android:id="@+id/button_search"
             android:layout_below="@id/edit_text_search" />
 
 </RelativeLayout>
