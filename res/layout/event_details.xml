@@ -8,7 +8,7 @@
             android:id="@+id/text_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_which_event_looking_for"/>
+            android:text="@string/label.which_event_looking_for"/>
 
     <EditText
             android:layout_width="fill_parent"
@@ -21,7 +21,7 @@
             android:id="@+id/button_search"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_search"
+            android:text="@string/button.search"
             android:layout_below="@id/edit_text_search" />
 
 </RelativeLayout>

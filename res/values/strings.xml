@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Open Networking</string>
-    <string name="text_which_event_looking_for">Qual evento você procura?</string>
-    <string name="hint_example">#tdc2013</string>
-    <string name="text_search">Procurar</string>
+    <string name="global.app_name">Open Networking</string>
+    <string name="button.login_by_linkedin">Entrar utilizando o Linkedin</string>
+    <string name="button.save">Salvar</string>
+    <string name="button.search_participant">Pesquisar participantes</string>
+    <string name="button.new_event">Novo evento</string>
+    <string name="button.define_start_date">Definir data de início</string>
+    <string name="button.checkin">Checkin</string>
+    <string name="button.checkout">Checkout</string>
+    <string name="button.search">Pesquisar</string>
+    <string name="label.which_event_looking_for">Qual evento você procura?</string>
+    <string name="label.event_name">Nome do evento</string>
+    <string name="label.start_date">Início</string>
+    <string name="label.end_date">Término</string>
+    <string name="label.with_that_knowledge">with that knowledge?</string>
+    <string name="menu.search">Pesquisar</string>
+    <string name="menu.new_event">Novo evento</string>
+    <string name="menu.my_events">Meus eventos</string>
+    <string name="menu.my_profile">Meu perfil</string>
+    <string name="menu.exit">Sair</string>
+    <string name="example.event_name">#tdc2013</string>
+    <string name="example.knowledge">Android</string>
+    <string name="text.event">Event</string>
+    <string name="text.participant">Participante</string>
+    <string name="text.start_date">Início</string>
+    <string name="text.end_date">Término</string>
+    <string name="text.skills">Conhecimentos</string>
 </resources>

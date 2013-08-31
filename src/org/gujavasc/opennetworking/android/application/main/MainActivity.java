@@ -1,4 +1,4 @@
-package org.gujavasc.opennetworking.android;
+package org.gujavasc.opennetworking.android.application.main;
 
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.os.Bundle;
@@ -10,11 +10,13 @@ import com.googlecode.androidannotations.annotations.Click;
 import com.googlecode.androidannotations.annotations.EActivity;
 
 import android.widget.EditText;
+
+import org.gujavasc.opennetworking.android.R;
 import org.gujavasc.opennetworking.android.fragment.DatePickerFragment;
 import com.googlecode.androidannotations.annotations.ViewById;
 import java.util.Calendar;
 
-@EActivity(R.layout.activity_main)
+@EActivity(R.layout.main)
 public class MainActivity extends SherlockFragmentActivity {
 
     @ViewById(R.id.edit_text_search)

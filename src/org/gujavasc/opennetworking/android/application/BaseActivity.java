@@ -1,9 +1,11 @@
-package org.gujavasc.opennetworking.android;
+package org.gujavasc.opennetworking.android.application;
 
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.google.analytics.tracking.android.EasyTracker;
+
+import org.gujavasc.opennetworking.android.R;
 
 public abstract class BaseActivity extends SherlockFragmentActivity {
 
