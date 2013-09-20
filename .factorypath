@@ -1,0 +1,4 @@
+<factorypath>
+    <factorypathentry kind="PLUGIN" id="org.eclipse.jst.ws.annotations.core" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="EXTJAR" id="C:\ambiente\androidannotations-2.7.1.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>
