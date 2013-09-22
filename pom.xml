@@ -35,12 +35,12 @@
 			<version>18</version>
 		</dependency>
 
-<!-- 		<dependency> -->
-<!-- 			<groupId>android.support</groupId> -->
-<!-- 			<artifactId>compatibility-v7</artifactId> -->
-<!-- 			<version>18</version> -->
-<!-- 			<type>apklib</type> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>android.support</groupId>
+			<artifactId>compatibility-v7</artifactId>
+			<version>18</version>
+			<type>apklib</type>
+		</dependency>
 
 		<dependency>
 			<groupId>android.support</groupId>
@@ -49,12 +49,12 @@
 			<type>jar</type>
 		</dependency>
 		
-<!-- 		<dependency> -->
-<!-- 			<groupId>android.support</groupId> -->
-<!-- 			<artifactId>compatibility-v7-appcompat</artifactId> -->
-<!-- 			<version>18</version> -->
-<!-- 			<type>apklib</type> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>android.support</groupId>
+			<artifactId>compatibility-v7-appcompat</artifactId>
+			<version>18</version>
+			<type>apklib</type>
+		</dependency>
 		
 		<dependency>
 			<groupId>android.support</groupId>
