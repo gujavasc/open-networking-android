@@ -13,7 +13,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/global.app_name"
-        android:theme="@style/Theme.Base.AppCompat.Light.DarkActionBar">
+        android:theme="@style/Theme.Gujavasc">
         
         <activity android:name=".application.LoginActivity_">
             <intent-filter>
