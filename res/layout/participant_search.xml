@@ -14,8 +14,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/edit_text_search"
-            android:layout_below="@id/text_search"
-            style="@style/form_text_field"/>
+            android:layout_below="@id/text_search" />
 
     <Button
             android:id="@+id/button_search"

@@ -1,13 +1,12 @@
-Open-Networking Android Project
-===============
+## Open-Networking Android Project
+---
+Projeto open-source desenvolvido pelo [Grupo de usu√°rios Java de SC](http://www.gujavasc.org "Blog do GUJavaSC") para facilitar a realiza√ß√£o de networking entre participantes de eventos.
 
-Projeto open-source para criaÁ„o de uma ferramenta de networking.
+**SDK m√≠nima:** `API 7 - Android 2.1 - Eclair`;  
+**SDK alvo:** `API 18 - Android 4.3 - Jelly Bean`.
 
-MÌnimo SDK requerido: API 7 - Android 2.1 (Eclair)
-
-ConfiguraÁ„o
-------------
-
-Acesse https://github.com/mosabua/maven-android-sdk-deployer e execute os passos para configuraÁ„o do SDK 4.1.2 do Android para Maven.
+## Configura√ß√£o
+---
+Siga os passos descritos nas p√°ginas [Configurando o ambiente de desenvolvimento](https://github.com/ricardolonga/open-networking-android/wiki/Configurando-o-ambiente-de-desenvolvimento) e [Clonando e configurando o projeto pelo Eclipse](https://github.com/ricardolonga/open-networking-android/wiki/Clonando-e-configurando-o-projeto-pelo-Eclipse).
 
 [![Build Status](https://travis-ci.org/gujavasc/open-networking-android.png?branch=master)](https://travis-ci.org/gujavasc/open-networking-android)
