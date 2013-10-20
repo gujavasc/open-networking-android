@@ -1,19 +1,35 @@
 package org.gujavasc.opennetworking.android.application;
 
 import org.gujavasc.opennetworking.android.R;
-import org.gujavasc.opennetworking.android.application.main.MainActivity_;
 
+import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-import com.googlecode.androidannotations.annotations.Click;
-import com.googlecode.androidannotations.annotations.EActivity;
-
-@EActivity(R.layout.login)
-public class LoginActivity extends BaseActivity {
-
-    @Click
-    public void loginByLinkedin() {
-        startActivity(new Intent(this, MainActivity_.class));
-    }
-
+public class LoginActivity extends Activity {
+	
+	@Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.login);
+        
+        Button botao = (Button) findViewById(R.id.login_by_linkedin);  
+        botao.setOnClickListener(new OnClickListener() {
+            @Override  
+            public void onClick(View v) {  
+            	test();
+            }  
+        });  
+	}
+	
+	private void test() {
+		Intent it = new Intent();
+		it.setComponent(new ComponentName("org.gujavasc.opennetworking.android.application", "org.gujavasc.opennetworking.android.application.MainActivity"));
+		startActivity(it);
+	}
+	
 }

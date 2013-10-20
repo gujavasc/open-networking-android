@@ -8,7 +8,8 @@
 			    android:paddingRight="@dimen/activity_horizontal_margin"
 			    android:paddingTop="@dimen/activity_vertical_margin">
 
-    <TextView
+    
+    <!-- <TextView
             android:id="@+id/text_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,7 +26,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/button.search"
-            android:layout_below="@id/edit_text_search" />
+            android:layout_below="@id/edit_text_search" />-->
+
+    
 
 </RelativeLayout>
 

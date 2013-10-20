@@ -15,14 +15,14 @@
         android:label="@string/global.app_name"
         android:theme="@style/Theme.Gujavasc">
         
-        <activity android:name=".application.LoginActivity_">
+        <activity android:name=".application.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         
-        <activity android:name=".application.main.MainActivity_" />
+        <activity android:name=".application.MainActivity" />
         
     </application>
 

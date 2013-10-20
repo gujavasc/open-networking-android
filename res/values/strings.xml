@@ -22,6 +22,8 @@
     <string name="label.start_date">Início</string>
     <string name="label.end_date">Término</string>
     <string name="label.with_that_knowledge">with that knowledge?</string>
+    <string name="label.share">Compartilhar</string>
+    <string name="label.search">Pesquisar</string>
     
     <string name="menu.search">Pesquisar</string>
     <string name="menu.new_event">Novo evento</string>

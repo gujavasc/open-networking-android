@@ -4,4 +4,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <item type="dimen" name="standard_text_size">16pt</item>
+    
+    <dimen name="login_linkedin_button_margin_top">10dp</dimen>
 </resources>
