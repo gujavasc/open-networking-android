@@ -27,9 +27,7 @@ public class LoginActivity extends Activity {
 	}
 	
 	private void test() {
-		Intent it = new Intent();
-		it.setComponent(new ComponentName("org.gujavasc.opennetworking.android.application", "org.gujavasc.opennetworking.android.application.MainActivity"));
-		startActivity(it);
+		startActivity(new Intent(LoginActivity.this, MainActivity.class));
 	}
 	
 }
