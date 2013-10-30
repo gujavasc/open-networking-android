@@ -28,7 +28,14 @@
             android:text="@string/button.search"
             android:layout_below="@id/edit_text_search" />-->
 
-    
+    <TextView
+        android:id="@+id/nome_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="" />
 
 </RelativeLayout>
 

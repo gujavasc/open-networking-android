@@ -1,9 +1,11 @@
 package org.gujavasc.opennetworking.android.application;
 
+import org.brickred.socialauth.Profile;
 import org.brickred.socialauth.android.DialogListener;
 import org.brickred.socialauth.android.SocialAuthAdapter;
 import org.brickred.socialauth.android.SocialAuthAdapter.Provider;
 import org.brickred.socialauth.android.SocialAuthError;
+import org.brickred.socialauth.android.SocialAuthListener;
 import org.gujavasc.opennetworking.android.R;
 
 import android.app.Activity;
@@ -46,7 +48,7 @@ public class LoginActivity extends Activity {
     private final class ResponseListener implements DialogListener {
         @Override
         public void onComplete(Bundle values) {
-            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            adapter.getUserProfileAsync(new ProfileDataListener());
         }
 
         @Override
@@ -62,6 +64,20 @@ public class LoginActivity extends Activity {
         @Override
         public void onBack() {
             Log.d("Share-Bar", "Dialog Closed by pressing Back Key");
+        }
+    }
+    
+    private final class ProfileDataListener implements SocialAuthListener<Profile> {
+        @Override
+        public void onExecute(String provider, Profile t) {
+            Profile profileMap = t;
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            intent.putExtra("profile", profileMap);
+            startActivity(intent);
+        }
+
+        @Override
+        public void onError(SocialAuthError e) {
         }
     }
 }
