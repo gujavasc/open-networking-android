@@ -1,29 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.gujavasc.opennetworking.android"
     android:versionCode="1"
-    android:versionName="1.0-SNAPSHOT">
+    android:versionName="1.0-SNAPSHOT" >
 
-    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="18" />
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/global.app_name"
-        android:theme="@style/Theme.Gujavasc">
-        
-        <activity android:name=".application.LoginActivity">
+        android:theme="@style/Theme.Gujavasc" >
+        <activity android:name=".application.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity android:name=".application.MainActivity" />
-        
+        <!-- created by Longa at 2013-10-28 21:22:51 -->
+        <activity android:name=".application.event.EventListActivity" />
     </application>
 
 </manifest>
