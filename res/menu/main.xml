@@ -11,18 +11,15 @@
 		android:showAsAction="ifRoom"
 		android:actionViewClass="android.widget.SearchView" />
        
-    <item
-        android:id="@+id/menu_item_action_provider_new_event"
+    <item android:id="@+id/menu_item_action_provider_new_event"
         android:title="@string/button.new_event"
         android:showAsAction="never" />
     
-    <item
-        android:id="@+id/menu_item_action_provider_my_events"
+    <item android:id="@+id/menu_item_action_provider_my_events"
         android:title="@string/button.my_events"
         android:showAsAction="never" />
    
-    <item
-        android:id="@+id/menu_item_action_provider_logout"
+    <item android:id="@+id/menu_item_action_provider_logout"
         android:title="@string/button.exit"
         android:showAsAction="never" />
 
