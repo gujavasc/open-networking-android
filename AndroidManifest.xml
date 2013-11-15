@@ -12,10 +12,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name="org.gujavasc.opennetworking.android.application.GlobalVars"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/global.app_name"
         android:theme="@style/Theme.Gujavasc" >
+        
         <activity android:name=".application.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <activity android:name=".application.MainActivity" />
+        
         <!-- created by Longa at 2013-10-28 21:22:51 -->
         <activity android:name=".application.event.EventListActivity" />
     </application>
