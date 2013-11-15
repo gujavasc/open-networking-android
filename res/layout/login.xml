@@ -6,12 +6,13 @@
 
     <Button
         android:id="@+id/login_by_linkedin"
-        style="@style/Theme.Gujavasc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/login_linkedin_button_margin_top"
-        android:text="@string/button.login_by_linkedin" />
+        android:text="@string/button.login_by_linkedin"
+        android:drawableLeft="@drawable/linkedin"
+        android:drawablePadding="10dp" />
 
 </RelativeLayout>
 
