@@ -74,7 +74,7 @@ public class BaseActivity extends ActionBarActivity implements TabListener {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                Log.d("android.R.id.home pressed.");
+                Log.v("android.R.id.home pressed.");
 
                 Intent intent = new Intent(this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -83,17 +83,17 @@ public class BaseActivity extends ActionBarActivity implements TabListener {
                 return true;
 
             case R.id.menu_item_share_action:
-                Log.d("R.id.menu_item_share_action pressed.");
+                Log.v("R.id.menu_item_share_action pressed.");
 
                 return true;
 
             case R.id.menu_item_new_event:
-                Log.d("R.id.menu_item_new_event pressed.");
+                Log.v("R.id.menu_item_new_event pressed.");
 
                 return true;
 
             case R.id.menu_item_my_events:
-                Log.d("R.id.menu_item_my_events pressed.");
+                Log.v("R.id.menu_item_my_events pressed.");
 
                 Intent intent2 = new Intent(this, EventListActivity.class);
                 intent2.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -102,7 +102,7 @@ public class BaseActivity extends ActionBarActivity implements TabListener {
                 return true;
 
             case R.id.menu_item_logout:
-                Log.d("R.id.menu_item_logout pressed.");
+                Log.v("R.id.menu_item_logout pressed.");
 
                 // ((GlobalVars) getApplication()).getAdapter().signOut(this, "Open");
                 LoginActivity.getS().signOut(this, "");
@@ -113,7 +113,7 @@ public class BaseActivity extends ActionBarActivity implements TabListener {
                 return true;
 
             default:
-                Log.d("Ação não implementado para o id " + item.getItemId() + " no método onOptionsItemSelected (BaseActivity).");
+                Log.v("Ação não implementado para o id " + item.getItemId() + " no método onOptionsItemSelected (BaseActivity).");
 
                 return super.onOptionsItemSelected(item);
         }
