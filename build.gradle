@@ -1,3 +1,7 @@
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.10'
+}
+
 buildscript {
 	repositories {
 		maven { url 'http://repo1.maven.org/maven2' }
