@@ -2,8 +2,11 @@
 
 *.iml
 .idea/
-out/
-gen-external-apklibs/
+build/
+
+########## Gradle #########
+
+.gradle
 
 ########## Eclipse ##########
 

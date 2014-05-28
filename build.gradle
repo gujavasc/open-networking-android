@@ -1,0 +1,69 @@
+buildscript {
+	repositories {
+		maven { url 'http://repo1.maven.org/maven2' }
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:0.9+'
+		classpath 'com.neenbedankt.gradle.plugins:android-apt:1.+'
+	}
+}
+
+apply plugin: 'android'
+apply plugin: 'android-apt'
+
+dependencies {
+	compile fileTree(dir: 'libs', include: '*.jar')
+	compile 'com.android.support:support-v4:19.+'
+	compile 'com.android.support:appcompat-v7:19.+'
+	apt 'com.googlecode.androidannotations:androidannotations:2.+'
+	compile 'com.googlecode.androidannotations:androidannotations-api:2.+'
+}
+
+apt {
+	arguments {
+		androidManifestFile variant.processResources.manifestFile
+		resourcePackageName 'org.gujavasc.opennetworking.androids'
+
+		// If you're using Android NBS flavors you should use the following line instead of hard-coded packageName
+		// resourcePackageName android.defaultConfig.packageName
+
+		// You can set optional annotation processing options here, like these commented options:
+		// logLevel 'INFO'
+		// logFile '/var/log/aa.log'
+	}
+}
+
+repositories {
+	maven { url 'http://repo1.maven.org/maven2' }
+}
+
+android {
+	compileSdkVersion 19
+	buildToolsVersion '19.0.3'
+	sourceSets {
+		main {
+			manifest {
+				srcFile 'AndroidManifest.xml'
+			}
+			res {
+				srcDir 'res'
+			}
+		}
+		androidTest {
+			java {
+				srcDirs 'src/test/java'
+			}
+		}
+	}
+	defaultConfig {
+		minSdkVersion 7
+		targetSdkVersion 19
+		testPackageName 'org.gujavasc.opennetworking.androids'
+		testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+		testHandleProfiling true
+		testFunctionalTest true
+	}
+    lintOptions {
+        abortOnError false
+    }
+}
