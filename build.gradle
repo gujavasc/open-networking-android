@@ -51,7 +51,7 @@ android {
 		}
 		androidTest {
 			java {
-				srcDirs 'src/test/java'
+				srcDir 'src/test/java'
 			}
 		}
 	}
